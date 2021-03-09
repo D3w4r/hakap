@@ -1,0 +1,14 @@
+version: "3.1"
+services: 
+  nginx_server:
+    image: nginx:alpine
+    ports:
+      - 666:80
+    volumes: 
+      - shared:/usr/share/nginx/html
+  cowsay:
+    image: d3w4r/hakap:cowsay
+    volumes:
+      - shared:/root/shared
+volumes: 
+  shared:
