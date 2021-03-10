@@ -1,3 +1,10 @@
 # HAKAP szintfelmérő
-## FONTOS!!
-Az itt szereplő fileok tartalmát tanulmányozni kell, csak úgy nem indul el magától a project pull után!
+
+A projektet a következp paranccsal lehet elindítani:
+
+```
+docker-compose -f compose.yaml up
+```
+
+### FONTOS!!
+A fileok alapján esedékes lehet egy `shared` mappa létrehozása is a megfelelő könyvtárban a host gépen
