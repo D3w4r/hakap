@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cowsay-dply
+  namespace: cowsay
+  labels:
+    app: cowsay
+spec:
+  selector:
+    matchLabels:
+      app: cowsay
+  template:
+    metadata:
+      labels:
+        app: cowsay
+    spec:
+      volumes:
+        - name: shared
+          emptyDir: {}
+      containers:
+        - name: cowsay
+          image: d3w4r/hakap:cowsay
+          volumeMounts:
+            - name: shared
+              mountPath: /root/shared
+        - name: nginx
+          image: nginx
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: shared
+              mountPath: /usr/share/nginx/html

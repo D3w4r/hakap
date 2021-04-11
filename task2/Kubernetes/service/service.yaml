@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cowsay-svc
+  namespace: cowsay
+  labels:
+    app: cowsay
+spec:
+  type: LoadBalancer
+  selector:
+    app: cowsay
+  ports:
+    - name: nginx
+      protocol: TCP
+      port: 8080
+      targetPort: 80
+      nodePort: 32000
