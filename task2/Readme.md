@@ -1,6 +1,6 @@
 # Task 2
 
-***Important:** This is the copy of the `README.md` file in [my repository](https://github.com/D3w4r/hakap), you can find the source files there! I can also submit a copy of this file in hungarian if you want, english is just for the consistency of the repository.*
+***Important:** This is the copy of the `README.md` file in [my repository](https://github.com/D3w4r/hakap), you can find the source files there! I can also gladly submit a copy of this file in hungarian if you want me to, english is just for the consistency of the repository.*
 
 This documentation does not fully explain the written code (exact meaning of words in config files),
 please refer to the official [Kubernetes documentation](https://kubernetes.io/)
